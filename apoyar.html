@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NoMo - Canal ciudadano de movilidad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="follow, index" />
+    <meta
+      name="description"
+      content="NoMo es una app ciudadana para reportar conductas indebidas en el transporte público individual. Previene el acoso, maltrato, robo o conducción riesgosa de forma anónima y segura."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🟣</text></svg>"
+    />
+
+    <meta property="og:url" content="https://nomo.app" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="NoMo" />
+    <meta property="og:title" content="NoMo - Canal ciudadano de movilidad" />
+    <meta
+      property="og:description"
+      content="Reporta y consulta la conducta de conductores de transporte público individual. Construido por y para la comunidad."
+    />
+    <meta
+      property="og:image"
+      content="https://yourdomain.com/nomo-og-image.png"
+    />
+    <meta property="og:locale" content="es_ES" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="NoMo - Canal ciudadano de movilidad" />
+    <meta
+      name="twitter:description"
+      content="Reporta y consulta conductas indebidas en transporte público. Espacio seguro, anónimo y accesible."
+    />
+    <meta
+      name="twitter:image"
+      content="https://yourdomain.com/nomo-og-image.png"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="antialiased text-slate-100 bg-slate-900">
+    <div class="bg-emerald-600 px-4 py-3 text-white">
+      <p class="text-center text-sm font-medium">
+        🚨 Comparte tus reportes de forma rápida, segura y anónima con NoMo.
+      </p>
+    </div>
+    <div class="max-w-xl p-4 md:p-8 mx-auto mt-4">
+      <div class="bg-white shadow overflow-hidden rounded-lg">
+        <div class="px-4 py-5 sm:px-6 flex justify-between items-center">
+          <div>
+            <h1 class="text-2xl leading-6 font-bold text-gray-900">NoMo 🚦</h1>
+            <h2 class="text-sm leading-6 text-gray-500 -mt-1">
+              Canal ciudadano de movilidad
+            </h2>
+            <!-- Sección de donaciones -->
+            <div id="donaciones" class="max-w-xl p-4 md:p-8 mx-auto mt-4">
+              <div class="bg-white shadow overflow-hidden rounded-lg p-6">
+                <h2 class="text-xl font-bold text-gray-900 mb-2">
+                  💛 Apoya este proyecto
+                </h2>
+                <p class="text-gray-700 mb-4">
+                  Puedes apoyar NoMo con una donación a través de Nequi. ¡Cada
+                  aporte ayuda a mantener la plataforma!
+                </p>
+
+                <div class="space-y-2">
+                  <div class="flex items-center space-x-3">
+                    <input
+                      id="nequiNumber"
+                      type="text"
+                      readonly
+                      value="3142758675"
+                      class="w-full px-3 py-2 border rounded text-gray-900"
+                    />
+                    <button
+                      onclick="copiarNequi(3142758675)"
+                      class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-4 py-2 rounded"
+                    >
+                      Copiar
+                    </button>
+                  </div>
+                  <p
+                    id="mensajeCopiado"
+                    class="text-sm text-emerald-600 mt-2 hidden"
+                  >
+                    ✅ Número copiado al portapapeles
+                  </p>
+                  <div>
+                    <div class="flex items-center space-x-2">
+                      <input
+                        id="nequi2"
+                        type="text"
+                        readonly
+                        value="3125935572"
+                        class="w-full px-3 py-2 border rounded text-gray-900"
+                      />
+                      <button
+                        onclick="copiarNequi(3125935572)"
+                        class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-4 py-2 rounded"
+                      >
+                        Copiar
+                      </button>
+                    </div>
+                    <p
+                      id="mensajeCopiado2"
+                      class="text-sm text-emerald-600 mt-2 hidden"
+                    >
+                      ✅ Número copiado al portapapeles
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-green-200 px-4 py-5 w-full flex justify-between">
+          <a
+            class="text-sm font-bold text-green-600 text-center hover:text-green-800 cursor-pointer"
+            href="https://wa.me/message/JK4YYEAJHGIPB1"
+            target="_blank"
+          >
+            Atención 24/7 NoMO.
+          </a>
+          <span>💻</span>
+        </div>
+        <div class="bg-sky-200 px-4 py-5 w-full flex justify-between">
+          <a
+            class="text-sm font-bold text-sky-600 text-center hover:text-sky-800 cursor-pointer"
+            href="/nomo-landing/conducta.html"
+            target="_self"
+          >
+            Código de Conducta.
+          </a>
+          <span>🎒</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function copiarNequi(number) {
+        const input = document.getElementById("nequiNumber");
+        const mensaje = document.getElementById("mensajeCopiado2");
+
+        console.log(number);
+
+        input.select();
+        input.setSelectionRange(0, 99999); // Para móviles
+        document.execCommand("copy");
+
+        mensaje.classList.remove("hidden");
+
+        setTimeout(() => {
+          mensaje.classList.add("hidden");
+        }, 2500);
+      }
+    </script>
+  </body>
+</html>
