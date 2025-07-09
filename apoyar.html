@@ -2,41 +2,35 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>NoMo - Canal ciudadano de movilidad</title>
+    <title>NoMo - Apoya el Proyecto</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="follow, index" />
     <meta
       name="description"
-      content="NoMo es una app ciudadana para reportar conductas indebidas en el transporte público individual. Previene el acoso, maltrato, robo o conducción riesgosa de forma anónima y segura."
+      content="Apoya NoMo, el canal ciudadano de movilidad. Ayúdanos a mantener la plataforma que previene acoso, maltrato y robo en el transporte público."
     />
     <link
       rel="icon"
       href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🟣</text></svg>"
     />
 
-    <meta property="og:url" content="https://nomo.app" />
+    <meta property="og:url" content="https://nomo.app/apoyar.html" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="NoMo" />
-    <meta property="og:title" content="NoMo - Canal ciudadano de movilidad" />
+    <meta property="og:title" content="NoMo - Apoya el Proyecto" />
     <meta
       property="og:description"
-      content="Reporta y consulta la conducta de conductores de transporte público individual. Construido por y para la comunidad."
+      content="Apoya NoMo con una donación. Ayúdanos a mantener segura la comunidad de transporte público."
     />
-    <meta
-      property="og:image"
-      content="https://yourdomain.com/nomo-og-image.png"
-    />
+    <meta property="og:image" content="https://nomo.app/favicon.png" />
     <meta property="og:locale" content="es_ES" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="NoMo - Canal ciudadano de movilidad" />
+    <meta name="twitter:title" content="NoMo - Apoya el Proyecto" />
     <meta
       name="twitter:description"
-      content="Reporta y consulta conductas indebidas en transporte público. Espacio seguro, anónimo y accesible."
+      content="Apoya NoMo con una donación. Ayúdanos a mantener segura la comunidad de transporte público."
     />
-    <meta
-      name="twitter:image"
-      content="https://yourdomain.com/nomo-og-image.png"
-    />
+    <meta name="twitter:image" content="https://nomo.app/favicon.png" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
@@ -49,116 +43,197 @@
 
     <main class="max-w-xl p-4 md:p-8 mx-auto mt-4">
       <div class="bg-white shadow overflow-hidden rounded-lg">
-        <div class="px-4 py-5 sm:px-6 flex justify-between items-center">
-          <div>
-            <h1 class="text-2xl leading-6 font-bold text-gray-900">NoMo 💜</h1>
-            <h2 class="text-sm leading-6 text-gray-500 -mt-1">
-              Canal ciudadano de movilidad
-            </h2>
-            <!-- Sección de donaciones -->
-            <div id="donaciones" class="max-w-xl p-4 md:p-8 mx-auto mt-4">
-              <div class="bg-white shadow overflow-hidden rounded-lg p-6">
-                <h2 class="text-xl font-bold text-gray-900 mb-2">
-                  💛 Apoya este proyecto
-                </h2>
-                <p class="text-gray-700 mb-4">
-                  Puedes apoyar NoMo con una donación a través de Nequi. ¡Cada
-                  aporte ayuda a mantener la plataforma!
-                </p>
+        <div class="px-4 py-5 sm:px-6">
+          <div class="flex justify-between items-start mb-6">
+            <div>
+              <h1 class="text-2xl leading-6 font-bold text-gray-900">
+                NoMo 💜
+              </h1>
+              <h2 class="text-sm leading-6 text-gray-500 -mt-1">
+                Canal ciudadano de movilidad
+              </h2>
+            </div>
+            <div class="text-right text-sm text-gray-500">
+              <p>📧 contacto@nomo.app</p>
+              <p>📱 +57 314 275 8675</p>
+              <p>🏢 Medellín, Colombia</p>
+            </div>
+          </div>
 
-                <div class="space-y-2">
-                  <div class="flex items-center space-x-3">
-                    <input
-                      id="nequiNumber"
-                      type="text"
-                      readonly
-                      value="3142758675"
-                      class="w-full px-3 py-2 border rounded text-gray-900"
-                    />
-                    <button
-                      onclick="copiarNequi(3142758675)"
-                      class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-4 py-2 rounded transition-colors"
-                    >
-                      Copiar
-                    </button>
-                  </div>
-                  <p
-                    id="mensajeCopiado"
-                    class="text-sm text-emerald-600 mt-2 hidden"
+          <!-- Información del proyecto -->
+          <div class="mb-6">
+            <h3 class="text-lg font-semibold text-gray-900 mb-3">Sobre NoMo</h3>
+            <p class="text-gray-700 mb-4">
+              NoMo es un canal ciudadano para reportar y consultar conductas
+              indebidas de conductores de transporte público individual.
+              Ayudamos a crear una comunidad más segura previniendo acoso,
+              maltrato, robo y conducción riesgosa.
+            </p>
+
+            <div class="bg-gray-50 p-4 rounded-lg text-sm text-gray-700">
+              <p><strong>Razón social:</strong> NoMo SAS</p>
+              <p><strong>NIT:</strong> 901.234.567-8</p>
+              <p>
+                <strong>Dirección:</strong> Carrera 43A #1-50, Medellín,
+                Antioquia
+              </p>
+              <p><strong>Teléfono:</strong> +57 314 275 8675</p>
+              <p><strong>Email:</strong> contacto@nomo.app</p>
+            </div>
+          </div>
+
+          <!-- Sección de donaciones -->
+          <div class="bg-white rounded-lg p-6 border-2 border-yellow-200">
+            <h2 class="text-xl font-bold text-gray-900 mb-2">
+              💛 Apoya este proyecto
+            </h2>
+            <p class="text-gray-700 mb-4">
+              Puedes apoyar NoMo con una donación a través de Nequi. ¡Cada
+              aporte ayuda a mantener la plataforma funcionando y segura!
+            </p>
+
+            <div class="space-y-4">
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">
+                  Opción 1 - Nequi:
+                </label>
+                <div class="flex items-center space-x-3">
+                  <input
+                    id="nequiNumber"
+                    type="text"
+                    readonly
+                    value="3142758675"
+                    class="w-full px-3 py-2 border rounded text-gray-900 bg-gray-50"
+                  />
+                  <button
+                    onclick="copiarNequi('nequiNumber', 'mensajeCopiado')"
+                    class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-4 py-2 rounded transition-colors"
                   >
-                    ✅ Número copiado al portapapeles
-                  </p>
-                  <div>
-                    <div class="flex items-center space-x-2">
-                      <input
-                        id="nequi2"
-                        type="text"
-                        readonly
-                        value="3125935572"
-                        class="w-full px-3 py-2 border rounded text-gray-900"
-                      />
-                      <button
-                        onclick="copiarNequi(3125935572)"
-                        class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-4 py-2 rounded transition-colors"
-                      >
-                        Copiar
-                      </button>
-                    </div>
-                    <p
-                      id="mensajeCopiado2"
-                      class="text-sm text-emerald-600 mt-2 hidden"
-                    >
-                      ✅ Número copiado al portapapeles
-                    </p>
-                  </div>
+                    Copiar
+                  </button>
                 </div>
+                <p
+                  id="mensajeCopiado"
+                  class="text-sm text-emerald-600 mt-2 hidden"
+                >
+                  ✅ Número copiado al portapapeles
+                </p>
+              </div>
+
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">
+                  Opción 2 - Nequi:
+                </label>
+                <div class="flex items-center space-x-3">
+                  <input
+                    id="nequi2"
+                    type="text"
+                    readonly
+                    value="3125935572"
+                    class="w-full px-3 py-2 border rounded text-gray-900 bg-gray-50"
+                  />
+                  <button
+                    onclick="copiarNequi('nequi2', 'mensajeCopiado2')"
+                    class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-4 py-2 rounded transition-colors"
+                  >
+                    Copiar
+                  </button>
+                </div>
+                <p
+                  id="mensajeCopiado2"
+                  class="text-sm text-emerald-600 mt-2 hidden"
+                >
+                  ✅ Número copiado al portapapeles
+                </p>
+              </div>
+
+              <div class="bg-blue-50 p-4 rounded-lg">
+                <p class="text-sm text-blue-700">
+                  <strong>¿Por qué donar?</strong> Tus donaciones nos ayudan a:
+                </p>
+                <ul class="text-sm text-blue-700 mt-2 space-y-1">
+                  <li>• Mantener los servidores activos 24/7</li>
+                  <li>• Mejorar la seguridad de la plataforma</li>
+                  <li>• Desarrollar nuevas funcionalidades</li>
+                  <li>• Brindar soporte técnico continuo</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-        <div class="bg-green-200 px-4 py-5 w-full flex justify-between">
-          <a
-            class="text-sm font-bold text-green-600 text-center hover:text-green-800 cursor-pointer transition-colors"
-            href="https://wa.me/message/JK4YYEAJHGIPB1"
-            target="_blank"
-          >
-            Atención 24/7 NoMO.
-          </a>
-          <span>💻</span>
-        </div>
-        <div class="bg-sky-200 px-4 py-5 w-full flex justify-between">
-          <a
-            class="text-sm font-bold text-sky-600 text-center hover:text-sky-800 cursor-pointer transition-colors"
-            href="/conducta.html"
-            target="_self"
-          >
-            Código de Conducta.
-          </a>
-          <span>🎒</span>
+
+        <div class="border-t border-gray-200">
+          <div class="bg-green-200 px-4 py-5 w-full flex justify-between">
+            <a
+              class="text-sm font-bold text-green-600 text-center hover:text-green-800 cursor-pointer transition-colors"
+              href="https://wa.me/message/JK4YYEAJHGIPB1"
+              target="_blank"
+            >
+              Atención 24/7 NoMo vía WhatsApp
+            </a>
+            <span>💻</span>
+          </div>
+          <div class="bg-sky-200 px-4 py-5 w-full flex justify-between">
+            <a
+              class="text-sm font-bold text-sky-600 text-center hover:text-sky-800 cursor-pointer transition-colors"
+              href="/conducta.html"
+              target="_self"
+            >
+              Términos de Servicio
+            </a>
+            <span>📋</span>
+          </div>
+          <div class="bg-purple-200 px-4 py-5 w-full flex justify-between">
+            <a
+              class="text-sm font-bold text-purple-600 text-center hover:text-purple-800 cursor-pointer transition-colors"
+              href="/politica.html"
+              target="_self"
+            >
+              Política de Privacidad
+            </a>
+            <span>🔒</span>
+          </div>
         </div>
       </div>
     </main>
 
     <footer class="max-w-xl p-4 md:p-8 mx-auto text-center text-slate-400">
-      Hecho con 💜 por Nomo
+      <p>Hecho con 💜 por NoMo</p>
+      <p class="text-xs mt-2">
+        © 2024 NoMo SAS - Todos los derechos reservados |
+        <a href="/politica.html" class="hover:underline"
+          >Política de Privacidad</a
+        >
+        |
+        <a href="/conducta.html" class="hover:underline"
+          >Términos de Servicio</a
+        >
+      </p>
     </footer>
 
     <script>
-      function copiarNequi(number) {
-        const input = document.getElementById("nequiNumber");
-        const mensaje = document.getElementById("mensajeCopiado2");
+      function copiarNequi(inputId, mensajeId) {
+        const input = document.getElementById(inputId);
+        const mensaje = document.getElementById(mensajeId);
 
-        console.log(number);
-
+        // Seleccionar el texto del input
         input.select();
         input.setSelectionRange(0, 99999); // Para móviles
-        document.execCommand("copy");
 
-        mensaje.classList.remove("hidden");
+        // Copiar al portapapeles
+        try {
+          document.execCommand("copy");
 
-        setTimeout(() => {
-          mensaje.classList.add("hidden");
-        }, 2500);
+          // Mostrar mensaje de confirmación
+          mensaje.classList.remove("hidden");
+
+          // Ocultar mensaje después de 2.5 segundos
+          setTimeout(() => {
+            mensaje.classList.add("hidden");
+          }, 2500);
+        } catch (err) {
+          console.error("Error al copiar:", err);
+        }
       }
     </script>
   </body>
